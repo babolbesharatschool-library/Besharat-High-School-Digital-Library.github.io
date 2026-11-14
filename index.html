@@ -7,23 +7,27 @@
   <title>کتابخانه دیجیتال دبیرستان بشارت</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Tahoma, Arial, sans-serif;
-      background: #f5f7fa;
+      background: #f4f7fa;
       color: #222;
+      text-align: center;
     }
 
     header {
-      background: #1f4e79;
+      background: #0d3b66;
       color: white;
-      text-align: center;
       padding: 35px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 32px;
     }
 
     header p {
@@ -31,40 +35,46 @@
       font-size: 17px;
     }
 
-    main {
+    .container {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 50px auto;
+      padding: 20px;
     }
 
     .welcome {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      padding: 45px 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     }
 
     .welcome h2 {
-      color: #1f4e79;
+      color: #0d3b66;
+      margin-bottom: 20px;
     }
 
-    .button {
+    .welcome p {
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .library-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #1f4e79;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background: #0d3b66;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      font-size: 17px;
+      transition: 0.2s;
     }
 
-    .button:hover {
-      background: #163a5c;
+    .library-button:hover {
+      background: #145b91;
     }
 
     footer {
-      text-align: center;
       margin-top: 60px;
       padding: 20px;
       color: #666;
@@ -80,17 +90,21 @@
     <p>مرجع دیجیتال کتاب‌ها و منابع آموزشی مدرسه</p>
   </header>
 
-  <main>
+  <main class="container">
+
     <section class="welcome">
       <h2>به کتابخانه دیجیتال بشارت خوش آمدید</h2>
 
       <p>
         در این سامانه می‌توانید به منابع و کتاب‌های دیجیتال
-        کتابخانه دبیرستان بشارت دسترسی داشته باشید.
+        دبیرستان بشارت دسترسی داشته باشید.
       </p>
 
-      <a class="button" href="#">ورود به کتابخانه</a>
+      <a href="library.html" class="library-button">
+        ورود به کتابخانه
+      </a>
     </section>
+
   </main>
 
   <footer>
